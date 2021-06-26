@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "rubico": "^1.6.29"
   }
 }
