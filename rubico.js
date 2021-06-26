@@ -18,7 +18,7 @@ const {
 ;(async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const responseData = await response.json()
-    // tap(console.log(responseData))
+    tap(console.log(pick(['id', 'name', 'username', 'email'])({...responseData[0]})))
 })()
 
 const square = (a) => a*a
