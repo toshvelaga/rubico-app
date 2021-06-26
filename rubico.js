@@ -25,9 +25,14 @@ const square = (a) => a*a
 
 const add = (b) => b + 3
 
+const five = always(5)
+
 const multiplyFunction = pipe([
+  tap(console.log),
   square,
+  tap(console.log),
   add,
   console.log
-])(10)
+])(five())
+
 
