@@ -18,8 +18,16 @@ const {
 ;(async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
     const responseData = await response.json()
-    console.log(responseData)
+    // tap(console.log(responseData))
 })()
 
-// console.log('hello')
-// console.log(rubico)
+const square = (a) => a*a
+
+const add = (b) => b + 3
+
+const multiplyFunction = pipe([
+  square,
+  add,
+  console.log
+])(10)
+
