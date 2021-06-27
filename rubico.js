@@ -25,6 +25,8 @@ const add = (b) => b + 3
 
 const five = always(5)
 
+const passport = always('USA')
+
 const multiplyFunction = pipe([
   tap(console.log),
   square,
@@ -36,7 +38,9 @@ const multiplyFunction = pipe([
 console.log(assign({
     fullName: ({ name }) => `${name} Smith`,
     age: ({ age }) => age + 1, 
-    location: () => 'San Francisco'
+    location: () => 'San Francisco',
+    job: () => 'Software Engineer',
+    passport: () => passport(),
 })({ name: 'Steven', age: 30 }))
 
 
