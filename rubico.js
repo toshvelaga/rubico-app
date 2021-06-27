@@ -1,7 +1,5 @@
 const rubico = require('rubico')
 const fetch = require('node-fetch');
-// const pipe = require('rubico/pipe')
-// const tap = require('rubico/tap')
 // const defaultsDeep = require('rubico/x/defaultsDeep')
 
 const {
@@ -34,5 +32,12 @@ const multiplyFunction = pipe([
   add,
   console.log
 ])(five())
+
+console.log(assign({
+    fullName: ({ name }) => `${name} Smith`,
+    age: ({ age }) => age + 1, 
+    location: () => 'San Francisco'
+})({ name: 'Steven', age: 30 }))
+
 
 
