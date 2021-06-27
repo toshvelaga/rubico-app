@@ -43,5 +43,15 @@ console.log(assign({
     passport: () => passport(),
 })({ name: 'Steven', age: 30 }))
 
+console.log(fork({
+    developers: fork([
+      position => `frontend' ${position}`,
+      position => `backend' ${position}`,
+    ]),
+})('engineer')
+)
+
+
+
 
 
