@@ -10,5 +10,5 @@ npm i
 ```
 Run the code
 ```sh
-node Rubico.js
+node rubico.js
 ```
