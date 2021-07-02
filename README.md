@@ -8,3 +8,7 @@ Install dependencies
 ```sh
 npm i
 ```
+Run the code
+```sh
+node Rubico.js
+```
